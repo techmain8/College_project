@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  .header{  
+    background-color: whitesmoke ;
+    color: black;
+    display: flex;
+    justify-content:center ;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 30px;
+    font-size: 45px;
+    text-align: center;    
+    background-size: cover;
+  }
+  .footer{
+    justify-content: center;
+    align-items: center;
+    border: 3px;
+    background-color: whitesmoke;
+    color: #000;
+    display: flex;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content:space-between;
+    align-self: center;
+  } 
+  html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: -webkit-linear-gradient(left, #afbaeb, #dd7f70);
+  }
+  .wrapper{
+    margin: auto;
+    overflow: hidden;
+    width: 50%;
+    background: #fff;
+    padding: 65px;
+    border-radius: 50px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+    align-items: center;
+  }
+  .wrapper .title-text{
+    display: flex;
+    width: 200%;
+  }
+  .wrapper .title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-container .form-inner{
+    display: flex;
+    width: 100%;
+  }
+  .form-container .form-inner form{
+    text-align: center;
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  .wrapper .title-login{
+    margin: auto;
+      display: flex;
+      font-weight: bolder;
+      width: 50%;
+      font-size: 45px;
+      text-align: center;  
+  }

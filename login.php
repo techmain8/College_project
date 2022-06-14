@@ -11,8 +11,10 @@ session_start();
 		//something was posted
 		$user_name = $_POST['user_name'];
 		$password = $_POST['password'];
+		
 
-		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+
+		if(!empty($user_name) && !empty($password))
 		{
 
 			//read from database
@@ -50,8 +52,9 @@ session_start();
 <html>
 <head>
 	<title>Login page</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+  <body>
 
 	<style type="text/css" >
 	
@@ -76,6 +79,14 @@ session_start();
 		background-color: lightblue;
 		border: none;
 	}
+	 
+	#form-inner{
+		display: flex;
+		background-color: grey;
+		margin: auto;
+		width: 300px;
+		padding: 20px;
+	}
 
 	#box{
 		display: flex;
@@ -87,11 +98,11 @@ session_start();
 
 	</style>
 	 <div class="header">THESIS TRACKING SYSTEM </div>
-      <div class="wrapper">
-         <div class="title-text">
-            <div class="title login">Login Form</div>
-             <div class="form-container">
-                <div class="form-inner">
+       <div class="wrapper">
+	      <div class="title-login">Login Form</div>
+            <div class="title-text">
+              <div class="form-container">
+                 <div class="form-inner">
                     <form action="" class="login" method="post">
                        <div class="field">
                           <input id="text" type="text"  placeholder="Email Address" name="user_name" required>
@@ -108,25 +119,13 @@ session_start();
                        </div>
                        <div class="signup-link">
                         Not a member? <a href="signup.php">Signup now</a>
-                     </div>  
+                       </div>  
 					</form>  
-                </div>
-             </div>
-            </div>
-         </div>
-
-	<div id="box">
-		
-		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Login</div>
-
-			<input id="text" type="text" name="user_name"><br><br>
-			<input id="text" type="password" name="password"><br><br>
-
-			<input id="button" type="submit" value="Login"><br><br>
-
-			<a href="signup.php">Click to Signup</a><br><br>
-		</form>
-	</div>
-</body>
+                 </div>
+              </div>
+            </div>	
+	   </div>
+	   <div class="footer"> <a href="all.html"> PROJECT DETAILS </a>
+       </div>	
+   </body>
 </html>
