@@ -112,9 +112,9 @@ session_start();
                     </div>
                     <div class="form-group">
                         <label for="number">Phone Number</label>
-                        <input type="number" class="form-control" id="number" name="number"/>
+                        <input  id="number" type="number" class="form-control" name="number"/>
                     </div>
-					<input  class="btn btn-primary" id="button" type="submit" value="Signup"/> 
+					<input  id="button" class="btn btn-primary" type="submit" value="Signup"/> 
                     <input type="button" class="btn btn-primary" value="Login Page"  onclick="document.location='login.php'"><br><br>
                 </form>
               </div>
